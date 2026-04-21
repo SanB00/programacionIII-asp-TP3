@@ -4,7 +4,7 @@ using System.Data;
 namespace TP3Grupo18
 {
     public partial class Ejercicio1 : System.Web.UI.Page
-    {
+    {/*
         protected void btnGenerarTabla_Click(object sender, EventArgs e) {
             #region 1) Preparar variables y limpiar inputs
             string msgDeErrores = String.Empty;
@@ -60,10 +60,9 @@ namespace TP3Grupo18
             txtCantidad2.Text = string.Empty;
             txtProducto1.Text = string.Empty;
             txtProducto2.Text = string.Empty;
-        }
-    protected void btnVolver_Click(object sender, EventArgs e)
-        {
+        }*/
+        protected void btnVolver_Click(object sender, EventArgs e) {
             Response.Redirect("MenuPrincipal.aspx");
         }
     }
-    }
+}
