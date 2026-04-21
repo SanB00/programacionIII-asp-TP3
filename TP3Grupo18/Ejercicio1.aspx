@@ -24,7 +24,7 @@
         }
 
         .auto-style5 {
-            width: 152px;
+            width: 100px;
             height: 26px;
         }
 
@@ -41,6 +41,7 @@
         .auto-style9 {
             width: 107px;
         }
+
         .auto-style10 {
             height: 23px;
         }
@@ -60,7 +61,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style9">&nbsp;</td>
-                    <td class="auto-style5">
+                    <td>
                         <asp:Label ID="lblNombreLocalidad" runat="server" Style="font-weight: 700" Text="Nobre de la localidad"></asp:Label>
                     </td>
                     <td class="auto-style6">
@@ -78,16 +79,89 @@
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style10"></td>
-                    <td class="auto-style10">
-                       <!-- <asp:Label ID="lblLocalidades" runat="server" Style="font-weight: 700" Text="Localidades"></asp:Label>
-                        -->
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <h3>Usuarios</h3>
                     </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Nombre usuario: </td>
+                    <td>
+                        <asp:TextBox ID="txtNombreUsuario" runat="server" Width="198px"></asp:TextBox></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Contraseña: </td>
+                    <td>
+                        <asp:TextBox ID="txtContrasena" runat="server" Width="198px"></asp:TextBox></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Repetir Contraseña: </td>
+                    <td>
+                        <asp:TextBox ID="txtContrasenaRepetida" runat="server" Width="198px"></asp:TextBox></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Correo Electrónico: </td>
+                    <td>
+                        <asp:TextBox ID="txtCorreoElectronico" runat="server" Width="198px"></asp:TextBox></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>CP Código Postal: </td>
+                    <td>
+                        <asp:TextBox ID="txtCodigoPostal" runat="server" Width="198px"></asp:TextBox></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Localidades: </td>
+                    <td>
+                        <asp:DropDownList ID="ddlLocalidades" runat="server"></asp:DropDownList>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td class="auto-style10"></td>
+                    <td class="auto-style10"></td>
                     <td class="auto-style10"></td>
                     <td class="auto-style10"></td>
                 </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" />
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <asp:Button ID="btnInicio" runat="server" Text="Ir al Inicio" />
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+
             </table>
         </div>
 

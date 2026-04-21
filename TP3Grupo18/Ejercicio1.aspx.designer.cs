@@ -51,12 +51,75 @@ namespace TP3Grupo18
         protected global::System.Web.UI.WebControls.Button btnGuardarLocalidad;
 
         /// <summary>
-        /// lblLocalidades control.
+        /// txtNombreUsuario control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLocalidades;
+        protected global::System.Web.UI.WebControls.TextBox txtNombreUsuario;
+
+        /// <summary>
+        /// txtContrasena control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtContrasena;
+
+        /// <summary>
+        /// txtContrasenaRepetida control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtContrasenaRepetida;
+
+        /// <summary>
+        /// txtCorreoElectronico control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCorreoElectronico;
+
+        /// <summary>
+        /// txtCodigoPostal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCodigoPostal;
+
+        /// <summary>
+        /// ddlLocalidades control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlLocalidades;
+
+        /// <summary>
+        /// btnGuardarUsuario control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnGuardarUsuario;
+
+        /// <summary>
+        /// btnInicio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnInicio;
     }
 }

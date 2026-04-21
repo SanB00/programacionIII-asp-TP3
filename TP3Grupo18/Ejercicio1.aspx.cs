@@ -1,5 +1,4 @@
 using System;
-using System.Data;
 
 namespace TP3Grupo18
 {
@@ -14,16 +13,22 @@ namespace TP3Grupo18
             string msgDeErrores = String.Empty;
             if (string.IsNullOrEmpty(strLocalidad)) { msgDeErrores += "\n * La localidad no debe tener espacios o quedar en blanco."; }
             if (!Common.estaElTextoDentroDelRango(strLocalidad)) { msgDeErrores += $"\n * La localidad debe tener entre {Common.MIN_CHARS_TEXTO} y {Common.MAX_CHARS_TEXTO} caracteres."; }
+            if (!Common.esAlfanumerico(strLocalidad)) { msgDeErrores += $"\n * La localidad solo puede llevar números y letras. Por favor elimine los caracteres especiales."; }
             if (!string.IsNullOrEmpty(msgDeErrores)) {
                 Common.mostrarMensajeEnAlerta(msgDeErrores, this);
                 return;
             }
             #endregion
 
-            #region 3) Cargar listado de localidades
+            #region 3) Validar repetidos con listado de localidades
+
             #endregion
 
-            #region 4) Limpiar campos después de cargar la tabla
+            #region 4) Cargar listado de localidades
+
+            #endregion
+
+            #region 5) Limpiar campos después de cargar la tabla
             this.btnLimpiar_Click(this, e);
             #endregion
         }

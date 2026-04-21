@@ -16,6 +16,9 @@ namespace TP3Grupo18
         public static bool esSoloLetras(string texto) {
             return texto.All(char.IsLetter);
         }
+        public static bool esAlfanumerico(string texto) {
+            return texto.All(c => char.IsLetterOrDigit(c) || char.IsWhiteSpace(c));
+        }
         public static bool estaElTextoDentroDelRango(string texto, int minChars = MIN_CHARS_TEXTO, int maxChars = MAX_CHARS_TEXTO) {
             if (string.IsNullOrEmpty(texto))
                 return minChars == 0;
