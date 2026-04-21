@@ -27,6 +27,12 @@ namespace TP3Grupo18
             return length >= minChars && length <= maxChars;
         }
 
+        public static string obtenerTextoPrimerLetraMayuscula(string texto) {
+            if (string.IsNullOrEmpty(texto))
+                return texto;
+
+            return char.ToUpper(texto[0]) + texto.Substring(1).ToLower();
+        }
         public static void mostrarMensajeEnAlerta(string mensaje, System.Web.UI.Page page) {
             string safeMessage = mensaje.Replace("'", "\\'").Replace("\n", "\\n");
             page.ClientScript.RegisterStartupScript(page.GetType(),

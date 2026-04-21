@@ -1,9 +1,13 @@
 using System;
+using System.Web.UI.WebControls;
 
 namespace TP3Grupo18
 {
     public partial class Ejercicio1 : System.Web.UI.Page
     {
+        protected void Page_Load(object sender, EventArgs e) {
+            if (!IsPostBack) { }
+        }
         protected void btnGuardarLocalidad_Click(object sender, EventArgs e) {
             #region 1) Preparar variables y limpiar inputs
             String strLocalidad = Common.eliminarEspaciosDelTexto(txtLocalidad.Text);
@@ -21,11 +25,18 @@ namespace TP3Grupo18
             #endregion
 
             #region 3) Validar repetidos con listado de localidades
-
+            foreach (ListItem item in ddlLocalidades.Items) {
+                if (item.Text.Equals(strLocalidad, StringComparison.OrdinalIgnoreCase)) {
+                    string mensaje = $"La localidad \"{strLocalidad}\" ya existe en el listado. Por favor no repetir el valor";
+                    Common.mostrarMensajeEnAlerta(mensaje, this);
+                    return;
+                }
+            }
             #endregion
 
             #region 4) Cargar listado de localidades
-
+            strLocalidad = Common.obtenerTextoPrimerLetraMayuscula(strLocalidad);
+            ddlLocalidades.Items.Add(new ListItem(strLocalidad, strLocalidad));
             #endregion
 
             #region 5) Limpiar campos después de cargar la tabla
@@ -35,6 +46,18 @@ namespace TP3Grupo18
 
         protected void btnLimpiar_Click(object sender, EventArgs e) {
             txtLocalidad.Text = string.Empty;
+        }
+
+        protected void btnGuardarUsuario_Click(object sender, EventArgs e) {
+            /*
+                String strNombreUsuario = Common.eliminarEspaciosDelTexto(txtNombreUsuario.Text);
+                txtNombreUsuario
+                txtContrasena
+                txtContrasenaRepetida
+                txtCorreoElectronico
+                txtCodigoPostal
+                ddlLocalidades
+            */
         }
     }
 }

@@ -145,7 +145,7 @@
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>
-                        <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" />
+                        <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" OnClick="btnGuardarUsuario_Click" />
                     </td>
                     <td>&nbsp;</td>
                 </tr>
