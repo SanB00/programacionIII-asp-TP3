@@ -24,31 +24,22 @@ namespace TP3Grupo18
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// lblLocalidadesTitulo control.
+        /// lblNombreLocalidad control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLocalidadesTitulo;
+        protected global::System.Web.UI.WebControls.Label lblNombreLocalidad;
 
         /// <summary>
-        /// lblLocalidades control.
+        /// txtLocalidad control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLocalidades;
-
-        /// <summary>
-        /// txtProducto1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtProducto1;
+        protected global::System.Web.UI.WebControls.TextBox txtLocalidad;
 
         /// <summary>
         /// btnGuardarLocalidad control.
@@ -58,5 +49,14 @@ namespace TP3Grupo18
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnGuardarLocalidad;
+
+        /// <summary>
+        /// lblLocalidades control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblLocalidades;
     }
 }

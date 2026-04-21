@@ -12,7 +12,7 @@
         }
 
         .auto-style2 {
-            width: 240px;
+            width: 152px;
         }
 
         .auto-style3 {
@@ -24,7 +24,7 @@
         }
 
         .auto-style5 {
-            width: 240px;
+            width: 152px;
             height: 26px;
         }
 
@@ -38,8 +38,11 @@
             height: 26px;
         }
 
-        .auto-style8 {
-            height: 26px;
+        .auto-style9 {
+            width: 107px;
+        }
+        .auto-style10 {
+            height: 23px;
         }
     </style>
 </head>
@@ -48,31 +51,42 @@
         <div>
             <table class="auto-style1">
                 <tr>
+                    <td class="auto-style9">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style3">
-                        <asp:Label ID="lblLocalidadesTitulo" runat="server" Style="font-weight: 700" Text="Localidades"></asp:Label>
+                        <h3>Localidades</h3>
                     </td>
                     <td class="auto-style4">&nbsp;</td>
                 </tr>
                 <tr>
+                    <td class="auto-style9">&nbsp;</td>
                     <td class="auto-style5">
-                        <asp:Label ID="lblLocalidades" runat="server" Style="font-weight: 700" Text="Nobre de la localidad"></asp:Label>
+                        <asp:Label ID="lblNombreLocalidad" runat="server" Style="font-weight: 700" Text="Nobre de la localidad"></asp:Label>
                     </td>
                     <td class="auto-style6">
-                        <asp:TextBox ID="txtProducto1" runat="server" Width="155px"></asp:TextBox>
+                        <asp:TextBox ID="txtLocalidad" runat="server" Width="198px"></asp:TextBox>
                     </td>
                     <td class="auto-style7">&nbsp;</td>
                 </tr>
-                <br />
                 <tr>
+                    <td class="auto-style9">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style3">
-                        <asp:Button ID="btnGuardarLocalidad" runat="server" Style="font-weight: 700" Text="GuardarLocalidad" Font-Bold="False" ToolTip=":)" />
+                        <asp:Button ID="btnGuardarLocalidad" runat="server" Style="font-weight: 700" Text="Guardar Localidad" Font-Bold="False" ToolTip=":)" OnClick="btnGuardarLocalidad_Click" Width="205px" />
                     </td>
                     <td class="auto-style4">&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style2">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style10"></td>
+                    <td class="auto-style10">
+                       <!-- <asp:Label ID="lblLocalidades" runat="server" Style="font-weight: 700" Text="Localidades"></asp:Label>
+                        -->
+                    </td>
+                    <td class="auto-style10"></td>
+                    <td class="auto-style10"></td>
                 </tr>
             </table>
         </div>

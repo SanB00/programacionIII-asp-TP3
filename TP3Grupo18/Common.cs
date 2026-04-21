@@ -6,7 +6,7 @@ namespace TP3Grupo18
     public class Common
     {
         public const int MIN_CHARS_TEXTO = 3;
-        public const int MAX_CHARS_TEXTO = 10;
+        public const int MAX_CHARS_TEXTO = 25;
         public static string eliminarEspaciosDelTexto(string texto) {
             return Regex.Replace(texto.Trim(), @"\s+", " ");
         }
