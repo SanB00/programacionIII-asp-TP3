@@ -1,4 +1,5 @@
 using System;
+using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace TP3Grupo18
@@ -7,6 +8,8 @@ namespace TP3Grupo18
     {
         protected void Page_Load(object sender, EventArgs e) {
             if (!IsPostBack) { }
+            ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
+
         }
         protected void btnGuardarLocalidad_Click(object sender, EventArgs e) {
             #region 1) Preparar variables y limpiar inputs

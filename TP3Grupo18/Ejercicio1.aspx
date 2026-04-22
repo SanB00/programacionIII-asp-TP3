@@ -67,15 +67,43 @@
                     <td class="auto-style6">
                         <asp:TextBox ID="txtLocalidad" runat="server" Width="198px"></asp:TextBox>
                     </td>
-                    <td class="auto-style7">&nbsp;</td>
+                    <td class="auto-style7">
+                        <asp:RequiredFieldValidator
+                            ID="rfvLocalidad"
+                            runat="server"
+                            ControlToValidate="txtLocalidad"
+                            ErrorMessage="La localidad es un campo requerido"
+                            ValidationGroup="vgLocalidad"
+                            Display="Dynamic"
+                            ForeColor="Red" />
+
+                        <asp:RegularExpressionValidator 
+                            ID="revLocalidad" 
+                            runat="server" 
+                            ValidationGroup="vgLocalidad"
+                            ControlToValidate="txtLocalidad"
+                            ValidationExpression="^.{1,25}$" 
+                            ErrorMessage="Mínimo 1 y máximo 25 caracteres." 
+                            Display="Dynamic"
+                            ForeColor="Red" />
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style9">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style3">
-                        <asp:Button ID="btnGuardarLocalidad" runat="server" Style="font-weight: 700" Text="Guardar Localidad" Font-Bold="False" ToolTip=":)" OnClick="btnGuardarLocalidad_Click" Width="205px" />
+                        <asp:Button ID="btnGuardarLocalidad" 
+                            ValidationGroup="vgLocalidad" 
+                            Text="Guardar Localidad" 
+                            ToolTip=":)" 
+                            runat="server" 
+                            Style="font-weight: 700" 
+                            Font-Bold="False" 
+                            OnClick="btnGuardarLocalidad_Click" 
+                            Width="205px" 
+                            />
                     </td>
-                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style2">&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
@@ -153,7 +181,7 @@
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
-                                <tr>
+                <tr>
                     <td>&nbsp;</td>
                     <td>
                         <asp:Button ID="btnInicio" runat="server" Text="Ir al Inicio" />
