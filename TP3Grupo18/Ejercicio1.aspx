@@ -82,7 +82,6 @@
                             runat="server" 
                             ValidationGroup="vgLocalidad"
                             ControlToValidate="txtLocalidad"
-                            
                             Display="Dynamic"
                             ForeColor="Red" />
                     </td>

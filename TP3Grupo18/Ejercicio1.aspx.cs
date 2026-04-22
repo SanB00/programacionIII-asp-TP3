@@ -7,15 +7,16 @@ namespace TP3Grupo18
     public partial class Ejercicio1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e) {
-            if (!IsPostBack) {
-                armarValidadores();
-            }
             ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
+            if (!IsPostBack) {
+                asignarReglasEnLosValidadores();
+            }
         }
 
-        private void armarValidadores() {
+        private void asignarReglasEnLosValidadores() {
             revLocalidad.ValidationExpression = $"^.{{{Common.MIN_CHARS_TEXTO},{Common.MAX_CHARS_TEXTO}}}$"; //ValidationExpression = "^.{1,25}$"
             revLocalidad.ErrorMessage = $"Mínimo {Common.MIN_CHARS_TEXTO} y máximo {Common.MAX_CHARS_TEXTO} caracteres"; //ErrorMessage="Mínimo 1 y máximo 25 caracteres." 
+            rfvLocalidad.ErrorMessage = "La localidad es un campo requerido. Por favor completar";
         }
 
         protected void btnGuardarLocalidad_Click(object sender, EventArgs e) {
