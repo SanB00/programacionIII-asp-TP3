@@ -62,7 +62,7 @@
                 <tr>
                     <td class="auto-style9">&nbsp;</td>
                     <td>
-                        <asp:Label ID="lblNombreLocalidad" runat="server" Style="font-weight: 700" Text="Nobre de la localidad"></asp:Label>
+                        <asp:Label ID="lblNombreLocalidad" runat="server" Style="font-weight: 700" Text="Nombre de la localidad"></asp:Label>
                     </td>
                     <td class="auto-style6">
                         <asp:TextBox ID="txtLocalidad" runat="server" Width="198px"></asp:TextBox>
