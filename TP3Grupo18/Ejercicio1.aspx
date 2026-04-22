@@ -82,8 +82,7 @@
                             runat="server" 
                             ValidationGroup="vgLocalidad"
                             ControlToValidate="txtLocalidad"
-                            ValidationExpression="^.{1,25}$" 
-                            ErrorMessage="Mínimo 1 y máximo 25 caracteres." 
+                            
                             Display="Dynamic"
                             ForeColor="Red" />
                     </td>

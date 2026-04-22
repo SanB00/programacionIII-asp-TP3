@@ -7,10 +7,17 @@ namespace TP3Grupo18
     public partial class Ejercicio1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e) {
-            if (!IsPostBack) { }
+            if (!IsPostBack) {
+                armarValidadores();
+            }
             ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
-
         }
+
+        private void armarValidadores() {
+            revLocalidad.ValidationExpression = $"^.{{{Common.MIN_CHARS_TEXTO},{Common.MAX_CHARS_TEXTO}}}$"; //ValidationExpression = "^.{1,25}$"
+            revLocalidad.ErrorMessage = $"Mínimo {Common.MIN_CHARS_TEXTO} y máximo {Common.MAX_CHARS_TEXTO} caracteres"; //ErrorMessage="Mínimo 1 y máximo 25 caracteres." 
+        }
+
         protected void btnGuardarLocalidad_Click(object sender, EventArgs e) {
             #region 1) Preparar variables y limpiar inputs
             String strLocalidad = Common.eliminarEspaciosDelTexto(txtLocalidad.Text);
