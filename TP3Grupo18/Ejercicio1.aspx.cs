@@ -10,13 +10,15 @@ namespace TP3Grupo18
             ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
             if (!IsPostBack) {
                 asignarReglasEnLosValidadores();
+                txtContrasena.TextMode = TextBoxMode.Password;
+                txtContrasenaRepetida.TextMode = TextBoxMode.Password;
             }
         }
 
         private void asignarReglasEnLosValidadores() {
             revLocalidad.ValidationExpression = $"^.{{{Common.MIN_CHARS_TEXTO},{Common.MAX_CHARS_TEXTO}}}$"; //ValidationExpression = "^.{1,25}$"
             revLocalidad.ErrorMessage = $"Mínimo {Common.MIN_CHARS_TEXTO} y máximo {Common.MAX_CHARS_TEXTO} caracteres"; //ErrorMessage="Mínimo 1 y máximo 25 caracteres." 
-            rfvLocalidad.ErrorMessage = "La localidad es un campo requerido. Por favor completar";
+            rfvLocalidadSeleccionada.ErrorMessage = "La localidad es un campo requerido. Por favor completar";
         }
 
         protected void btnGuardarLocalidad_Click(object sender, EventArgs e) {

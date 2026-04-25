@@ -48,7 +48,7 @@ namespace TP3Grupo18
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvLocalidad;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvLocalidadSeleccionada;
 
         /// <summary>
         /// revLocalidad control.
@@ -96,13 +96,31 @@ namespace TP3Grupo18
         protected global::System.Web.UI.WebControls.TextBox txtContrasena;
 
         /// <summary>
-        /// txtContrasenaRepetida control.
+        /// Control rfvContrasenia.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvContrasenia;
+
+        /// <summary>
+        /// Control txtContrasenaRepetida.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtContrasenaRepetida;
+
+        /// <summary>
+        /// Control rfvContraseniaRepetida.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvContraseniaRepetida;
 
         /// <summary>
         /// Control cvContrasenia.
@@ -123,6 +141,15 @@ namespace TP3Grupo18
         protected global::System.Web.UI.WebControls.TextBox txtCorreoElectronico;
 
         /// <summary>
+        /// Control rfvCorreo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCorreo;
+
+        /// <summary>
         /// Control revCorreo.
         /// </summary>
         /// <remarks>
@@ -139,6 +166,15 @@ namespace TP3Grupo18
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtCodigoPostal;
+
+        /// <summary>
+        /// Control rfvCodPostal.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCodPostal;
 
         /// <summary>
         /// Control revCp.
@@ -159,7 +195,16 @@ namespace TP3Grupo18
         protected global::System.Web.UI.WebControls.DropDownList ddlLocalidades;
 
         /// <summary>
-        /// btnGuardarUsuario control.
+        /// Control RequiredFieldValidator1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+
+        /// <summary>
+        /// Control btnGuardarUsuario.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
@@ -175,5 +220,14 @@ namespace TP3Grupo18
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnInicio;
+
+        /// <summary>
+        /// Control ValidationSummary1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
     }
 }
