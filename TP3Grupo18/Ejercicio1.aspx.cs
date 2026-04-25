@@ -18,7 +18,8 @@ namespace TP3Grupo18
         private void asignarReglasEnLosValidadores() {
             revLocalidad.ValidationExpression = $"^.{{{Common.MIN_CHARS_TEXTO},{Common.MAX_CHARS_TEXTO}}}$"; //ValidationExpression = "^.{1,25}$"
             revLocalidad.ErrorMessage = $"Mínimo {Common.MIN_CHARS_TEXTO} y máximo {Common.MAX_CHARS_TEXTO} caracteres"; //ErrorMessage="Mínimo 1 y máximo 25 caracteres." 
-            rfvLocalidadSeleccionada.ErrorMessage = "La localidad es un campo requerido. Por favor completar";
+            rfvLocalidad.ErrorMessage = "La localidad es un campo requerido. Por favor completar";
+            rfvLocalidadSeleccionada.ErrorMessage = "Seleccione una localidad del desplegable";
         }
 
         protected void btnGuardarLocalidad_Click(object sender, EventArgs e) {

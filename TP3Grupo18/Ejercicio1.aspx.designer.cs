@@ -48,7 +48,7 @@ namespace TP3Grupo18
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvLocalidadSeleccionada;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvLocalidad;
 
         /// <summary>
         /// revLocalidad control.
@@ -78,16 +78,16 @@ namespace TP3Grupo18
         protected global::System.Web.UI.WebControls.TextBox txtNombreUsuario;
 
         /// <summary>
-        /// Control rfvNombre.
+        /// rfvNombre control.
         /// </summary>
         /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvNombre;
 
         /// <summary>
-        /// Control txtContrasena.
+        /// txtContrasena control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
@@ -96,16 +96,16 @@ namespace TP3Grupo18
         protected global::System.Web.UI.WebControls.TextBox txtContrasena;
 
         /// <summary>
-        /// Control rfvContrasenia.
+        /// rfvContrasenia control.
         /// </summary>
         /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvContrasenia;
 
         /// <summary>
-        /// Control txtContrasenaRepetida.
+        /// txtContrasenaRepetida control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
@@ -114,25 +114,25 @@ namespace TP3Grupo18
         protected global::System.Web.UI.WebControls.TextBox txtContrasenaRepetida;
 
         /// <summary>
-        /// Control rfvContraseniaRepetida.
+        /// rfvContraseniaRepetida control.
         /// </summary>
         /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvContraseniaRepetida;
 
         /// <summary>
-        /// Control cvContrasenia.
+        /// cvContrasenia control.
         /// </summary>
         /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CompareValidator cvContrasenia;
 
         /// <summary>
-        /// Control txtCorreoElectronico.
+        /// txtCorreoElectronico control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
@@ -141,25 +141,25 @@ namespace TP3Grupo18
         protected global::System.Web.UI.WebControls.TextBox txtCorreoElectronico;
 
         /// <summary>
-        /// Control rfvCorreo.
+        /// rfvCorreo control.
         /// </summary>
         /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCorreo;
 
         /// <summary>
-        /// Control revCorreo.
+        /// revCorreo control.
         /// </summary>
         /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator revCorreo;
 
         /// <summary>
-        /// Control txtCodigoPostal.
+        /// txtCodigoPostal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
@@ -168,25 +168,25 @@ namespace TP3Grupo18
         protected global::System.Web.UI.WebControls.TextBox txtCodigoPostal;
 
         /// <summary>
-        /// Control rfvCodPostal.
+        /// rfvCodPostal control.
         /// </summary>
         /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCodPostal;
 
         /// <summary>
-        /// Control revCp.
+        /// revCp control.
         /// </summary>
         /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator revCp;
 
         /// <summary>
-        /// Control ddlLocalidades.
+        /// ddlLocalidades control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
@@ -195,16 +195,16 @@ namespace TP3Grupo18
         protected global::System.Web.UI.WebControls.DropDownList ddlLocalidades;
 
         /// <summary>
-        /// Control RequiredFieldValidator1.
+        /// rfvLocalidadSeleccionada control.
         /// </summary>
         /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvLocalidadSeleccionada;
 
         /// <summary>
-        /// Control btnGuardarUsuario.
+        /// btnGuardarUsuario control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
@@ -222,11 +222,11 @@ namespace TP3Grupo18
         protected global::System.Web.UI.WebControls.Button btnInicio;
 
         /// <summary>
-        /// Control ValidationSummary1.
+        /// ValidationSummary1 control.
         /// </summary>
         /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
     }

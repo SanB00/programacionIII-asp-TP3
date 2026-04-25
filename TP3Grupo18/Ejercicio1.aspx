@@ -134,9 +134,9 @@
                     </td>
                     <td class="auto-style35">
                         <asp:RequiredFieldValidator
-                            ID="rfvLocalidadSeleccionada"
+                            ID="rfvLocalidad"
                             runat="server"
-                            ControlToValidate="ddlLocalidades"
+                            ControlToValidate="txtLocalidad"
                             ErrorMessage="La localidad es un campo requerido"
                             ValidationGroup="vgLocalidad"
                             Display="Dynamic"
@@ -204,7 +204,7 @@
                     <td class="auto-style31">
                         <asp:TextBox ID="txtContrasena" runat="server" Width="198px"></asp:TextBox></td>
                     <td class="auto-style34">
-                        <asp:RequiredFieldValidator ID="rfvContrasenia" runat="server" ControlToValidate="txtContrasena" ErrorMessage="Debe Ingresar una contrasenia" Font-Bold="False">*</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rfvContrasenia" runat="server" ControlToValidate="txtContrasena"  ValidationGroup="vgUsuario" ErrorMessage="Debe Ingresar una contrasenia" Font-Bold="False">*</asp:RequiredFieldValidator>
                     </td>
                     <td class="auto-style22">&nbsp;</td>
                 </tr>
@@ -214,8 +214,8 @@
                     <td class="auto-style29">
                         <asp:TextBox ID="txtContrasenaRepetida" runat="server" Width="198px"></asp:TextBox></td>
                     <td class="auto-style37">
-                        <asp:RequiredFieldValidator ID="rfvContraseniaRepetida" runat="server" ControlToValidate="txtContrasenaRepetida" ErrorMessage="Debe Validar la contrasenia" Font-Bold="False">*</asp:RequiredFieldValidator>
-                        <asp:CompareValidator ID="cvContrasenia" runat="server" ControlToCompare="txtContrasenaRepetida" ControlToValidate="txtContrasena">Las contraseñas no coinciden</asp:CompareValidator>
+                        <asp:RequiredFieldValidator ID="rfvContraseniaRepetida" runat="server" ControlToValidate="txtContrasenaRepetida" ValidationGroup="vgUsuario"  ErrorMessage="Debe Validar la contrasenia" Font-Bold="False">*</asp:RequiredFieldValidator>
+                        <asp:CompareValidator ID="cvContrasenia" runat="server" ControlToCompare="txtContrasenaRepetida"  ValidationGroup="vgUsuario" ControlToValidate="txtContrasena">* Las contraseñas no coinciden</asp:CompareValidator>
                     </td>
                     <td class="auto-style20">
                         &nbsp;</td>
@@ -226,8 +226,8 @@
                     <td class="auto-style31">
                         <asp:TextBox ID="txtCorreoElectronico" runat="server" Width="198px"></asp:TextBox></td>
                     <td class="auto-style34">
-                        <asp:RequiredFieldValidator ID="rfvCorreo" runat="server" ControlToValidate="txtCorreoElectronico" ErrorMessage="Debe ingresar un Correo Electronico" Font-Bold="False">*</asp:RequiredFieldValidator>
-                        <asp:RegularExpressionValidator ID="revCorreo" runat="server" ControlToValidate="txtCorreoElectronico" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">Correo electronico no valido</asp:RegularExpressionValidator>
+                        <asp:RequiredFieldValidator ID="rfvCorreo" runat="server" ControlToValidate="txtCorreoElectronico" ValidationGroup="vgUsuario" ErrorMessage="Debe ingresar un Correo Electronico" Font-Bold="False">*</asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="revCorreo" runat="server" ControlToValidate="txtCorreoElectronico" ValidationGroup="vgUsuario" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">Correo electronico no valido</asp:RegularExpressionValidator>
                     </td>
                     <td class="auto-style22">
                         &nbsp;</td>
@@ -238,8 +238,8 @@
                     <td class="auto-style31">
                         <asp:TextBox ID="txtCodigoPostal" runat="server" Width="198px"></asp:TextBox></td>
                     <td class="auto-style34">
-                        <asp:RequiredFieldValidator ID="rfvCodPostal" runat="server" ControlToValidate="txtCodigoPostal" ErrorMessage="Debe Ingresar un Codigo Postal" Font-Bold="False">*</asp:RequiredFieldValidator>
-                        <asp:RegularExpressionValidator ID="revCp" runat="server" ControlToValidate="txtCodigoPostal" ValidationExpression="\d{4}">Codigo postal no valido, debe tener 4 digitos</asp:RegularExpressionValidator>
+                        <asp:RequiredFieldValidator ID="rfvCodPostal" runat="server" ControlToValidate="txtCodigoPostal" ValidationGroup="vgUsuario"  ErrorMessage="Debe Ingresar un Codigo Postal" Font-Bold="False">*</asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="revCp" runat="server" ControlToValidate="txtCodigoPostal" ValidationGroup="vgUsuario" ValidationExpression="\d{4}">Codigo postal no valido, debe tener 4 digitos</asp:RegularExpressionValidator>
                     </td>
                     <td class="auto-style22">
                         &nbsp;</td>
@@ -251,8 +251,15 @@
                         <asp:DropDownList ID="ddlLocalidades" runat="server"></asp:DropDownList>
                     </td>
                     <td class="auto-style35">
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="ddlLocalidades" ErrorMessage="Seleccione una Localidad" Font-Bold="False">*</asp:RequiredFieldValidator>
-                    </td>
+                        <asp:RequiredFieldValidator
+                            ID="rfvLocalidadSeleccionada"
+                            runat="server"
+                            ControlToValidate="ddlLocalidades"
+                            ErrorMessage="Seleccione una Localidad"
+                            ValidationGroup="vgUsuario"
+                            Display="Dynamic"
+                            ForeColor="Red"
+                            Font-Bold="False">*</asp:RequiredFieldValidator>
                     <td class="auto-style7">&nbsp;</td>
                 </tr>
 
@@ -267,7 +274,7 @@
                     <td class="auto-style23">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style31">
-                        <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" OnClick="btnGuardarUsuario_Click" />
+                        <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" ValidationGroup="vgUsuario" OnClick="btnGuardarUsuario_Click" />
                     </td>
                     <td class="auto-style34">&nbsp;</td>
                     <td class="auto-style22">&nbsp;</td>
@@ -282,7 +289,7 @@
                         <asp:Button ID="btnInicio" runat="server" Text="Ir al Inicio" />
                     </td>
                     <td class="auto-style31">
-                        <asp:ValidationSummary ID="ValidationSummary1" runat="server" ShowMessageBox="True" ShowSummary="False" Width="198px" />
+                        <asp:ValidationSummary ID="ValidationSummary1" ValidationGroup="vgUsuario" runat="server" ShowMessageBox="True" ShowSummary="True" Width="198px" />
                     </td>
                     <td class="auto-style34">&nbsp;</td>
                     <td class="auto-style22">&nbsp;</td>
