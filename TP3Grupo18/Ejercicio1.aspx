@@ -16,20 +16,15 @@
         }
 
         .auto-style3 {
-            width: 244px;
+            width: 124px;
         }
 
         .auto-style4 {
             width: 71px;
         }
 
-        .auto-style5 {
-            width: 100px;
-            height: 26px;
-        }
-
         .auto-style6 {
-            width: 244px;
+            width: 124px;
             height: 26px;
         }
 
@@ -44,6 +39,10 @@
 
         .auto-style10 {
             height: 23px;
+        }
+        .auto-style11 {
+            height: 23px;
+            width: 124px;
         }
     </style>
 </head>
@@ -106,13 +105,13 @@
                 <tr>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td>
+                    <td class="auto-style3">
                         <h3>Usuarios</h3>
                     </td>
                     <td>&nbsp;</td>
@@ -120,42 +119,46 @@
                 <tr>
                     <td>&nbsp;</td>
                     <td>Nombre usuario: </td>
-                    <td>
+                    <td class="auto-style3">
                         <asp:TextBox ID="txtNombreUsuario" runat="server" Width="198px"></asp:TextBox></td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:RequiredFieldValidator ID="rfvNombre" runat="server" ControlToValidate="txtNombreUsuario">Ingrese Nombre</asp:RequiredFieldValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                     <td>Contraseña: </td>
-                    <td>
+                    <td class="auto-style3">
                         <asp:TextBox ID="txtContrasena" runat="server" Width="198px"></asp:TextBox></td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                     <td>Repetir Contraseña: </td>
-                    <td>
+                    <td class="auto-style3">
                         <asp:TextBox ID="txtContrasenaRepetida" runat="server" Width="198px"></asp:TextBox></td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:CompareValidator ID="cvContrasenia" runat="server" ControlToCompare="txtContrasenaRepetida" ControlToValidate="txtContrasena">Las contraseñas no coinciden</asp:CompareValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                     <td>Correo Electrónico: </td>
-                    <td>
+                    <td class="auto-style3">
                         <asp:TextBox ID="txtCorreoElectronico" runat="server" Width="198px"></asp:TextBox></td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                     <td>CP Código Postal: </td>
-                    <td>
+                    <td class="auto-style3">
                         <asp:TextBox ID="txtCodigoPostal" runat="server" Width="198px"></asp:TextBox></td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                     <td>Localidades: </td>
-                    <td>
+                    <td class="auto-style3">
                         <asp:DropDownList ID="ddlLocalidades" runat="server"></asp:DropDownList>
                     </td>
                     <td>&nbsp;</td>
@@ -164,13 +167,13 @@
                 <tr>
                     <td class="auto-style10"></td>
                     <td class="auto-style10"></td>
-                    <td class="auto-style10"></td>
+                    <td class="auto-style11"></td>
                     <td class="auto-style10"></td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td>
+                    <td class="auto-style3">
                         <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" OnClick="btnGuardarUsuario_Click" />
                     </td>
                     <td>&nbsp;</td>
@@ -184,7 +187,7 @@
                     <td>
                         <asp:Button ID="btnInicio" runat="server" Text="Ir al Inicio" />
                     </td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
 

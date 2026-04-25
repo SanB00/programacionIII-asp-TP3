@@ -78,7 +78,16 @@ namespace TP3Grupo18
         protected global::System.Web.UI.WebControls.TextBox txtNombreUsuario;
 
         /// <summary>
-        /// txtContrasena control.
+        /// Control rfvNombre.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvNombre;
+
+        /// <summary>
+        /// Control txtContrasena.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
@@ -96,7 +105,16 @@ namespace TP3Grupo18
         protected global::System.Web.UI.WebControls.TextBox txtContrasenaRepetida;
 
         /// <summary>
-        /// txtCorreoElectronico control.
+        /// Control cvContrasenia.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator cvContrasenia;
+
+        /// <summary>
+        /// Control txtCorreoElectronico.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
