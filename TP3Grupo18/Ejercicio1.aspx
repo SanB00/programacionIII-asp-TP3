@@ -13,12 +13,13 @@
 
         .colBordes {
             width: 15%;
-            background-color: lightgray;
+            background-color: lightblue;
         }
 
         .colEtiquetas {
             width: 20%;
             text-align: right;
+            font-weight: bold;
         }
 
         .colCampos {
@@ -29,6 +30,11 @@
         .colValidacion {
             width: 35%;
             text-align: left;
+        }
+
+        td select {
+            width: 66%;
+            height: 100%;
         }
     </style>
 </head>
@@ -50,7 +56,7 @@
                 <tr>
                     <td class="colBordes ">&nbsp;</td>
                     <td class="colEtiquetas">
-                        <asp:Label ID="lblNombreLocalidad" runat="server" Style="font-weight: 700" Text="Nombre de la localidad"></asp:Label>
+                        <asp:Label ID="lblNombreLocalidad" runat="server" Text="Nombre de la localidad"></asp:Label>
                     </td>
                     <td class="colCampos">
                         <asp:TextBox ID="txtLocalidad" runat="server" Width="198px"></asp:TextBox>
@@ -84,7 +90,6 @@
                             Text="Guardar Localidad"
                             ToolTip=":)"
                             runat="server"
-                            Style="font-weight: 700"
                             Font-Bold="False"
                             OnClick="btnGuardarLocalidad_Click"
                             Width="205px" />
@@ -192,7 +197,7 @@
                     <td class="colBordes ">&nbsp;</td>
                     <td class="colEtiquetas">&nbsp;</td>
                     <td class="colCampos">
-                        <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" ValidationGroup="vgUsuario" OnClick="btnGuardarUsuario_Click" />
+                        <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" ValidationGroup="vgUsuario" OnClick="btnGuardarUsuario_Click" Width="205px" />
                     </td>
                     <td class="colValidacion">&nbsp;</td>
                     <td class="colBordes">&nbsp;</td>
