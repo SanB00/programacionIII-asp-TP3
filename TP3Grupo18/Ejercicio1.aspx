@@ -146,14 +146,18 @@
                     <td>Correo Electrónico: </td>
                     <td class="auto-style3">
                         <asp:TextBox ID="txtCorreoElectronico" runat="server" Width="198px"></asp:TextBox></td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:RegularExpressionValidator ID="revCorreo" runat="server" ControlToValidate="txtCorreoElectronico" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">Correo electronico no valido</asp:RegularExpressionValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                     <td>CP Código Postal: </td>
                     <td class="auto-style3">
                         <asp:TextBox ID="txtCodigoPostal" runat="server" Width="198px"></asp:TextBox></td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:RegularExpressionValidator ID="revCp" runat="server" ControlToValidate="txtCodigoPostal" ValidationExpression="\d{4}">Codigo postal no valido, debe tener 4 digitos</asp:RegularExpressionValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>

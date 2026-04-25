@@ -123,7 +123,16 @@ namespace TP3Grupo18
         protected global::System.Web.UI.WebControls.TextBox txtCorreoElectronico;
 
         /// <summary>
-        /// txtCodigoPostal control.
+        /// Control revCorreo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revCorreo;
+
+        /// <summary>
+        /// Control txtCodigoPostal.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
@@ -132,7 +141,16 @@ namespace TP3Grupo18
         protected global::System.Web.UI.WebControls.TextBox txtCodigoPostal;
 
         /// <summary>
-        /// ddlLocalidades control.
+        /// Control revCp.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revCp;
+
+        /// <summary>
+        /// Control ddlLocalidades.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
