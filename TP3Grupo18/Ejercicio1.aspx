@@ -13,12 +13,13 @@
 
         .colBordes {
             width: 15%;
-            background-color: lightgray;
+            background-color: lightblue;
         }
 
         .colEtiquetas {
             width: 20%;
             text-align: right;
+            font-weight: bold;
         }
 
         .colCampos {
@@ -30,6 +31,16 @@
             width: 35%;
             text-align: left;
         }
+
+        td {
+            vertical-align: top;
+            height: 100%;
+        }
+
+            td select {
+                width: 205px;
+                height: 100%;
+            }
     </style>
 </head>
 <body>
@@ -50,7 +61,7 @@
                 <tr>
                     <td class="colBordes ">&nbsp;</td>
                     <td class="colEtiquetas">
-                        <asp:Label ID="lblNombreLocalidad" runat="server" Style="font-weight: 700" Text="Nombre de la localidad"></asp:Label>
+                        <asp:Label ID="lblNombreLocalidad" runat="server" Text="Nombre de la localidad"></asp:Label>
                     </td>
                     <td class="colCampos">
                         <asp:TextBox ID="txtLocalidad" runat="server" Width="198px"></asp:TextBox>
@@ -84,8 +95,6 @@
                             Text="Guardar Localidad"
                             ToolTip=":)"
                             runat="server"
-                            Style="font-weight: 700"
-                            Font-Bold="False"
                             OnClick="btnGuardarLocalidad_Click"
                             Width="205px" />
                     </td>
@@ -114,7 +123,7 @@
                     <td class="colCampos">
                         <asp:TextBox ID="txtNombreUsuario" runat="server" Width="198px"></asp:TextBox></td>
                     <td class="colValidacion">
-                        <asp:RequiredFieldValidator ID="rfvNombre" runat="server" ControlToValidate="txtNombreUsuario" ValidationGroup="vgUsuario" ErrorMessage="Ingrese un Nombre de usuario" Font-Bold="False">* Ingrese un Nombre</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rfvNombre" runat="server" ControlToValidate="txtNombreUsuario" ValidationGroup="vgUsuario" ErrorMessage="Ingrese un Nombre de usuario">* Ingrese un Nombre de usuario</asp:RequiredFieldValidator>
                     </td>
                     <td class="colBordes">&nbsp;</td>
                 </tr>
@@ -124,7 +133,7 @@
                     <td class="colCampos">
                         <asp:TextBox ID="txtContrasena" runat="server" Width="198px"></asp:TextBox></td>
                     <td class="colValidacion">
-                        <asp:RequiredFieldValidator ID="rfvContrasenia" runat="server" ControlToValidate="txtContrasena" ValidationGroup="vgUsuario" ErrorMessage="Debe ingresar una contraseña" Font-Bold="False">Debe ingresar una contraseña</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rfvContrasenia" runat="server" ControlToValidate="txtContrasena" ValidationGroup="vgUsuario" ErrorMessage="Debe ingresar una contraseña">* Debe ingresar una contraseña</asp:RequiredFieldValidator>
                     </td>
                     <td class="colBordes">&nbsp;</td>
                 </tr>
@@ -134,8 +143,8 @@
                     <td class="colCampos">
                         <asp:TextBox ID="txtContrasenaRepetida" runat="server" Width="198px"></asp:TextBox></td>
                     <td class="colValidacion">
-                        <asp:RequiredFieldValidator ID="rfvContraseniaRepetida" runat="server" ControlToValidate="txtContrasenaRepetida" ValidationGroup="vgUsuario" ErrorMessage="Completar la contraseña repetida" Font-Bold="False" />
-                        <asp:CompareValidator ID="cvContrasenia" runat="server" ControlToCompare="txtContrasenaRepetida" ValidationGroup="vgUsuario" ControlToValidate="txtContrasena">* Las contraseñas no coinciden</asp:CompareValidator>
+                        <asp:RequiredFieldValidator ID="rfvContraseniaRepetida" runat="server" ControlToValidate="txtContrasenaRepetida" ValidationGroup="vgUsuario" ErrorMessage="Completar la contraseña repetida"> * Completar la contraseña repetida</asp:RequiredFieldValidator>
+                        <asp:CompareValidator ID="cvContrasenia" runat="server" ControlToCompare="txtContrasenaRepetida" ValidationGroup="vgUsuario" ControlToValidate="txtContrasena" ErrorMessage="Las contraseñas no coinciden">* Las contraseñas no coinciden</asp:CompareValidator>
                     </td>
                     <td class="colBordes">&nbsp;</td>
                 </tr>
@@ -145,7 +154,7 @@
                     <td class="colCampos">
                         <asp:TextBox ID="txtCorreoElectronico" runat="server" Width="198px"></asp:TextBox></td>
                     <td class="colValidacion">
-                        <asp:RequiredFieldValidator ID="rfvCorreo" runat="server" ControlToValidate="txtCorreoElectronico" ValidationGroup="vgUsuario" ErrorMessage="Debe ingresar un Correo electrónico" Font-Bold="False">*</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rfvCorreo" runat="server" ControlToValidate="txtCorreoElectronico" ValidationGroup="vgUsuario" ErrorMessage="Debe ingresar un correo electrónico">* Debe ingresar un correo electrónico</asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="revCorreo" runat="server" ControlToValidate="txtCorreoElectronico" ValidationGroup="vgUsuario" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">Correo electronico no valido</asp:RegularExpressionValidator>
                     </td>
                     <td class="colBordes">&nbsp;</td>
@@ -154,10 +163,11 @@
                     <td class="colBordes ">&nbsp;</td>
                     <td class="colEtiquetas">CP Código Postal: </td>
                     <td class="colCampos">
-                        <asp:TextBox ID="txtCodigoPostal" runat="server" Width="198px"></asp:TextBox></td>
+                        <asp:TextBox ID="txtCodigoPostal" runat="server" Width="198px"></asp:TextBox>
+                    </td>
                     <td class="colValidacion">
-                        <asp:RequiredFieldValidator ID="rfvCodPostal" runat="server" ControlToValidate="txtCodigoPostal" ValidationGroup="vgUsuario" ErrorMessage="Debe Ingresar un Codigo Postal" Font-Bold="False">* Debe Ingresar un Codigo Postal</asp:RequiredFieldValidator>
-                        <asp:RegularExpressionValidator ID="revCp" runat="server" ControlToValidate="txtCodigoPostal" ValidationGroup="vgUsuario" ValidationExpression="\d{4}">* Codigo postal no valido, debe tener 4 digitos</asp:RegularExpressionValidator>
+                        <asp:RequiredFieldValidator ID="rfvCodPostal" runat="server" ControlToValidate="txtCodigoPostal" ValidationGroup="vgUsuario" ErrorMessage="Debe ingresar un Código postal">* Debe ingresar un Código postal</asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="revCp" runat="server" ControlToValidate="txtCodigoPostal" ValidationGroup="vgUsuario" ValidationExpression="\d{4}" ErrorMessage="Código postal no valido, debe tener 4 digitos">* Código postal no valido, debe tener 4 digitos</asp:RegularExpressionValidator>
                     </td>
                     <td class="colBordes">&nbsp;</td>
                 </tr>
@@ -175,8 +185,7 @@
                             ErrorMessage="Seleccione una localidad"
                             ValidationGroup="vgUsuario"
                             Display="Dynamic"
-                            ForeColor="Red"
-                            Font-Bold="False">* Seleccione una localidad</asp:RequiredFieldValidator>
+                            ForeColor="Red">* Seleccione una localidad</asp:RequiredFieldValidator>
                     </td>
                     <td class="colBordes">&nbsp;</td>
                 </tr>
@@ -192,14 +201,13 @@
                     <td class="colBordes ">&nbsp;</td>
                     <td class="colEtiquetas">&nbsp;</td>
                     <td class="colCampos">
-                        <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" ValidationGroup="vgUsuario" OnClick="btnGuardarUsuario_Click" />
+                        <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" ValidationGroup="vgUsuario" OnClick="btnGuardarUsuario_Click" Width="205px" />
                     </td>
                     <td class="colValidacion">&nbsp;</td>
                     <td class="colBordes">&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="colBordes ">&nbsp;</td>
-                    <td class="colEtiquetas">&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="colBordes ">&nbsp;</td>
