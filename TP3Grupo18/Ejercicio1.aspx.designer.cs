@@ -24,15 +24,6 @@ namespace TP3Grupo18
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// lblNombreLocalidad control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNombreLocalidad;
-
-        /// <summary>
         /// txtLocalidad control.
         /// </summary>
         /// <remarks>
@@ -78,6 +69,15 @@ namespace TP3Grupo18
         protected global::System.Web.UI.WebControls.TextBox txtNombreUsuario;
 
         /// <summary>
+        /// rfvNombre control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvNombre;
+
+        /// <summary>
         /// txtContrasena control.
         /// </summary>
         /// <remarks>
@@ -85,6 +85,15 @@ namespace TP3Grupo18
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtContrasena;
+
+        /// <summary>
+        /// rfvContrasenia control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvContrasenia;
 
         /// <summary>
         /// txtContrasenaRepetida control.
@@ -96,6 +105,24 @@ namespace TP3Grupo18
         protected global::System.Web.UI.WebControls.TextBox txtContrasenaRepetida;
 
         /// <summary>
+        /// rfvContraseniaRepetida control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvContraseniaRepetida;
+
+        /// <summary>
+        /// cvContrasenia control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator cvContrasenia;
+
+        /// <summary>
         /// txtCorreoElectronico control.
         /// </summary>
         /// <remarks>
@@ -103,6 +130,24 @@ namespace TP3Grupo18
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtCorreoElectronico;
+
+        /// <summary>
+        /// rfvCorreo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCorreo;
+
+        /// <summary>
+        /// revCorreo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revCorreo;
 
         /// <summary>
         /// txtCodigoPostal control.
@@ -114,6 +159,24 @@ namespace TP3Grupo18
         protected global::System.Web.UI.WebControls.TextBox txtCodigoPostal;
 
         /// <summary>
+        /// rfvCodPostal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCodPostal;
+
+        /// <summary>
+        /// revCp control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revCp;
+
+        /// <summary>
         /// ddlLocalidades control.
         /// </summary>
         /// <remarks>
@@ -121,6 +184,15 @@ namespace TP3Grupo18
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlLocalidades;
+
+        /// <summary>
+        /// rfvLocalidadSeleccionada control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvLocalidadSeleccionada;
 
         /// <summary>
         /// btnGuardarUsuario control.
@@ -139,5 +211,23 @@ namespace TP3Grupo18
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnInicio;
+
+        /// <summary>
+        /// lblResultadoUsuario control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblResultadoUsuario;
+
+        /// <summary>
+        /// ValidationSummary1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
     }
 }
