@@ -63,8 +63,9 @@ namespace TP3Grupo18
         }
 
         protected void btnGuardarUsuario_Click(object sender, EventArgs e) {
+            #region 1) Preparar variables y limpiar inputs
+            String strNombreUsuario = Common.eliminarEspaciosDelTexto(txtNombreUsuario.Text);
             /*
-                String strNombreUsuario = Common.eliminarEspaciosDelTexto(txtNombreUsuario.Text);
                 txtNombreUsuario
                 txtContrasena
                 txtContrasenaRepetida
@@ -72,6 +73,28 @@ namespace TP3Grupo18
                 txtCodigoPostal
                 ddlLocalidades
             */
+            #endregion
+
+            #region 2) Validar campos
+            string msgDeErrores = String.Empty;
+            if (string.IsNullOrEmpty(strNombreUsuario)) { msgDeErrores += "\n * El nombre de usuario no debe tener espacios o quedar en blanco."; }
+            if (!string.IsNullOrEmpty(msgDeErrores)) {
+                Common.mostrarMensajeEnAlerta(msgDeErrores, this);
+                return;
+            }
+            #endregion
+
+            #region 4) Cargar label de bienvenida
+            lblResultadoUsuario.Text = $"Bienvenido {strNombreUsuario} !";
+            #endregion
+
+            #region 5) Limpiar campos después de cargar la tabla
+            //this.btnLimpiar_Click(this, e);
+            #endregion
+        }
+
+        protected void btnInicio_Click(object sender, EventArgs e) {
+            Response.Redirect("Inicio.aspx");
         }
     }
 }

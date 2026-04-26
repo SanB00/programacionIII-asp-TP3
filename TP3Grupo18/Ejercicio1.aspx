@@ -43,6 +43,32 @@
                 width: 205px;
                 height: 100%;
             }
+        .auto-style2 {
+            height: 100%;
+        }
+        .auto-style3 {
+            width: 20%;
+            text-align: right;
+            font-weight: bold;
+            font-weight: bold;
+            height: 100%;
+        }
+        .auto-style4 {
+            width: 25%;
+            text-align: center;
+            height: 100%;
+        }
+        .auto-style5 {
+            width: 35%;
+            text-align: left;
+            height: 100%;
+        }
+        .auto-style6 {
+            width: 15%;
+            background-color: lightblue;
+            background-color: lightblue;
+            height: 100%;
+        }
     </style>
 </head>
 <body>
@@ -62,10 +88,7 @@
                 </tr>
                 <tr>
                     <td class="colBordes ">&nbsp;</td>
-                    <td class="colEtiquetas">
-                        <asp:Label ID="lblNombreLocalidad" runat="server" Text="Nombre de la localidad"></asp:Label>
-                        <asp:Label ID="lblNombreLocalidad" runat="server" Text="Nombre de la localidad"></asp:Label>
-                    </td>
+                    <td class="colEtiquetas">Nombre de la localidad </td>
                     <td class="colCampos">
                         <asp:TextBox ID="txtLocalidad" runat="server" Width="198px"></asp:TextBox>
                     </td>
@@ -112,13 +135,13 @@
                     <td class="colBordes">&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="colBordes "></td>
-                    <td class="colEtiquetas"></td>
-                    <td class="colCampos">
+                    <td class="auto-style2"></td>
+                    <td class="auto-style3"></td>
+                    <td class="auto-style4">
                         <h3>Usuarios</h3>
                     </td>
-                    <td class="colValidacion"></td>
-                    <td class="colBordes">&nbsp;</td>
+                    <td class="auto-style5"></td>
+                    <td class="auto-style6"></td>
                 </tr>
                 <tr>
                     <td class="colBordes ">&nbsp;</td>
@@ -205,7 +228,6 @@
                     <td class="colEtiquetas">&nbsp;</td>
                     <td class="colCampos">
                         <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" ValidationGroup="vgUsuario" OnClick="btnGuardarUsuario_Click" Width="205px" />
-                        <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" ValidationGroup="vgUsuario" OnClick="btnGuardarUsuario_Click" Width="205px" />
                     </td>
                     <td class="colValidacion">&nbsp;</td>
                     <td class="colBordes">&nbsp;</td>
@@ -216,9 +238,11 @@
                 <tr>
                     <td class="colBordes ">&nbsp;</td>
                     <td class="colEtiquetas">
-                        <asp:Button ID="btnInicio" runat="server" Text="Ir al Inicio" />
+                        <asp:Button ID="btnInicio" runat="server" Text="Ir al Inicio" OnClick="btnInicio_Click" />
                     </td>
-                    <td class="colCampos">&nbsp;</td>
+                    <td class="colCampos">
+                        <asp:Label ID="lblResultadoUsuario" runat="server" Font-Bold="True" Font-Size="Large"></asp:Label>
+                    </td>
                     <td class="colValidacion">
                         <asp:ValidationSummary ID="ValidationSummary1" ValidationGroup="vgUsuario" runat="server" ShowMessageBox="True" ShowSummary="True" />
                     </td>
