@@ -14,11 +14,13 @@
         .colBordes {
             width: 15%;
             background-color: lightblue;
+            background-color: lightblue;
         }
 
         .colEtiquetas {
             width: 20%;
             text-align: right;
+            font-weight: bold;
             font-weight: bold;
         }
 
@@ -61,6 +63,7 @@
                 <tr>
                     <td class="colBordes ">&nbsp;</td>
                     <td class="colEtiquetas">
+                        <asp:Label ID="lblNombreLocalidad" runat="server" Text="Nombre de la localidad"></asp:Label>
                         <asp:Label ID="lblNombreLocalidad" runat="server" Text="Nombre de la localidad"></asp:Label>
                     </td>
                     <td class="colCampos">
@@ -201,6 +204,7 @@
                     <td class="colBordes ">&nbsp;</td>
                     <td class="colEtiquetas">&nbsp;</td>
                     <td class="colCampos">
+                        <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" ValidationGroup="vgUsuario" OnClick="btnGuardarUsuario_Click" Width="205px" />
                         <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" ValidationGroup="vgUsuario" OnClick="btnGuardarUsuario_Click" Width="205px" />
                     </td>
                     <td class="colValidacion">&nbsp;</td>
