@@ -95,6 +95,6 @@ namespace TP3Grupo18
 
         protected void btnInicio_Click(object sender, EventArgs e) {
             Response.Redirect("Inicio.aspx");
-        }
+        }   
     }
 }

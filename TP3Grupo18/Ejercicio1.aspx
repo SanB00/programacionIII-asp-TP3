@@ -167,7 +167,7 @@
                     <td class="colBordes "></td>
                     <td class="colEtiquetas">Repetir Contraseña: </td>
                     <td class="colCampos">
-                        <asp:TextBox ID="txtContrasenaRepetida" runat="server" Width="198px"></asp:TextBox></td>
+                        <asp:TextBox ID="txtContrasenaRepetida" runat="server" Width="198px" ToolTip="Las contraseñas deben coincidir"></asp:TextBox></td>
                     <td class="colValidacion">
                         <asp:RequiredFieldValidator ID="rfvContraseniaRepetida" runat="server" ControlToValidate="txtContrasenaRepetida" ValidationGroup="vgUsuario" ErrorMessage="Completar la contraseña repetida"> * Completar la contraseña repetida</asp:RequiredFieldValidator>
                         <asp:CompareValidator ID="cvContrasenia" runat="server" ControlToCompare="txtContrasenaRepetida" ValidationGroup="vgUsuario" ControlToValidate="txtContrasena" ErrorMessage="Las contraseñas no coinciden">* Las contraseñas no coinciden</asp:CompareValidator>
@@ -189,7 +189,7 @@
                     <td class="colBordes ">&nbsp;</td>
                     <td class="colEtiquetas">CP Código Postal: </td>
                     <td class="colCampos">
-                        <asp:TextBox ID="txtCodigoPostal" runat="server" Width="198px"></asp:TextBox>
+                        <asp:TextBox ID="txtCodigoPostal" runat="server" Width="198px" ToolTip="Solo se permiten 4 digitos"></asp:TextBox>
                     </td>
                     <td class="colValidacion">
                         <asp:RequiredFieldValidator ID="rfvCodPostal" runat="server" ControlToValidate="txtCodigoPostal" ValidationGroup="vgUsuario" ErrorMessage="Debe ingresar un Código postal">* Debe ingresar un Código postal</asp:RequiredFieldValidator>
@@ -201,7 +201,7 @@
                     <td class="colBordes "></td>
                     <td class="colEtiquetas">Localidades: </td>
                     <td class="colCampos">
-                        <asp:DropDownList ID="ddlLocalidades" runat="server"></asp:DropDownList>
+                        <asp:DropDownList ID="ddlLocalidades" runat="server" ToolTip="Seleccione una de las localidades cargadas"></asp:DropDownList>
                     </td>
                     <td class="colValidacion">
                         <asp:RequiredFieldValidator
